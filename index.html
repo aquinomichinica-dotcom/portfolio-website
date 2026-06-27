@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+  <nav>
+    <a href="#" class="logo"><span>Michi</span></a>
+ 
+
+  <ul class="links">
+    <a href="#profile">Profile</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#hobbies">Hobbies</a>
+  </ul>
+ 
+  </nav>
+
+  <section id="profile">
+
+   <div class="profile-card">
+    <img src="img/profile.jpg" alt="">
+    
+
+    <div class="info">
+      <h1><span>Hi, I'm Janica Michi Aquino</span></h1>
+      <h3><span>Third-Year BS Information Technology Student</span></h3>
+      <p>
+        "I am a 20-year-old student at Eastern Samar State University. I am committed to expanding my knowledge and improving my skills through education and experience. As a motivated and responsible individual, I strive to achieve my goals while continuously learning and growing both academically and personally."
+      </p>
+
+      <div class="personal-info">
+        <p><i class='bx bx-map'></i> Abenis Street, Barangay B, Borongan City</p>
+        <p><i class='bx bx-cake'></i> January 29, 2006</p>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/janica.michi.aquino.2025" target="_blank">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="https://www.instagram.com/m1chinica/" target="_blank">
+          <i class='bx bxl-instagram' ></i>
+        </a>
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+
+  <section id="education">
+
+    <h1><span>Educational Background</span></h1>
+
+    <div class="educ-info">
+      <div class="grid">
+        
+        <div class="grid-card">
+
+          <span>Bachelor of Science in Information Technology</span>
+          <h3>Eastern Samar State University</h3>
+          <h3>2024-Present</h3>
+        </div>
+
+        <div class="grid-card">
+          <span>Senior High School</span>
+          <h3>Eastern Samar National Comprehensive High School</h3>
+          <h3>2022-2024</h3>
+        </div>
+
+        <div class="grid-card">
+          <span>Junior High School</span>
+          <h3>Eastern Samar National Comprehensive High School</h3>
+          <h3>2018-2022</h3>
+        </div>
+
+        <div class="grid-card">
+          <span>Elementary School</span>
+          <h3>Eugenio S. Daza Pilot Elementary School</h3>
+          <h3>2012-2018</h3>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+  <h1><span>Projects</span></h1>
+
+  <div class="project-box">
+
+    <div class="project-card">
+      <img src="img/project1.png" alt="Kamote 'Te" onclick="openImg(this)">   
+      <h3>T.H.I.S. Appointment System</h3>
+      <h4>Description</h4>
+      <p>
+        A dental clinic appointment management system designed to organize patient
+        appointments efficiently. It helps clinic staff manage schedules, reducing
+        confusion and preventing appointment conflicts. The system also records patient
+        information and maintains a history of dental services received.
+      </p>
+      <h4>My Role</h4>
+      <p>
+        Handled the UI design and back-end development of the system.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <img src="img/project2.png" alt="Kamote 'Te" onclick="openImg(this)">
+      <h3>Kamote 'Te</h3>
+      <h4>Description</h4>
+      <p>
+        This website showcases the product we sold during our entrepreneurship project. It introduces the product, provides information about its ingredients, and highlights its key features. The website also includes the contact information of the entrepreneurs, making it easy for customers to reach out for inquiries or orders.
+      </p>
+      <h4>My Role</h4>
+      <p>
+        Solely developed the entire project from design to deployment.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <img src="img/project3.png" alt="Task Manager" onclick="openImg(this)">
+      <h3>Task Manager</h3>
+      <h4>Description</h4>
+        <p>
+          This Task Manager Website is designed to help users organize and manage their daily tasks efficiently. It allows users to create, edit, and delete tasks, set priorities, and track their progress. With its simple and user-friendly interface, this website helps users stay organized, manage their time effectively, and improve productivity.
+        </p>
+      <h4>My Role</h4>
+      <p>
+        Assistant Front-end Developer
+      </p>
+    </div>
+
+  </div>
+
+  
+  <div id="imgOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;" onclick="closeImg()">
+    <span style="position:fixed; top:1rem; right:1.5rem; width:40px; height:40px; background:rgba(255,255,255,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:white; cursor:pointer;"><i class='bx bx-x'></i></span>
+    <img id="imgOverlayImg" src="" alt="" style="max-width:90%; max-height:90vh; border-radius:12px; object-fit:contain;" onclick="event.stopPropagation()">
+  </div>
+
+  <script>
+    function openImg(img) {
+      document.getElementById('imgOverlayImg').src = img.src;
+      document.getElementById('imgOverlay').style.display = 'flex';
+    }
+    function closeImg() {
+      document.getElementById('imgOverlay').style.display = 'none';
+    }
+  </script>
+
+</section>
+
+<section id="hobbies">
+  <h1><span>Hobbies & Interests</span></h1>
+
+  <div class="hobbies-box">
+
+    <div class="hobby-card">
+      <i class='bx bx-book-open''></i>
+      <h3>Reading</h3>
+      <p>Enjoys reading books; recently into romance fantasy books.</p>
+    </div>
+
+    <div class="hobby-card">
+      <i class='bx bx-music'></i>
+      <h3>Listening to Music</h3>
+      <p>Loves listening to music while doing something.</p>
+    </div>
+
+    <div class="hobby-card">
+      <i class='bx bx-joystick'></i>
+      <h3>Playing Games</h3>
+      <p>Enjoys playing video games as a way to have fun and unwind after a long day.</p>
+    </div>
+
+    <div class="hobby-card">
+      <i class='bx bx-movie-play'></i>
+      <h3>Watching Movies/Series/Anime</h3>
+      <p>Enjoys watching films and series as a way to unwind.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
